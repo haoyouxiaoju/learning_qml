@@ -3,6 +3,8 @@ import QtQuick.VirtualKeyboard
 import QtQuick.Controls
 
 // import QtQuick.Controls.Styles
+import "./day02"
+import "./day03"
 
 Window {
     id: window
@@ -14,8 +16,18 @@ Window {
     // MySignal{}
     // ChangeColorRect{}
     // KeyMoveText{}
-    StartTimer{}
-
+    // StartTimer{}
+    // PinchPhone{}
+    // ColorPicker{}
+    // ComponentFile{}
+    // LoaderTest{}
+    // LoaderTestFileInput{}
+    // LoaderTestFileInput2{}
+    // CreateControls{}
+    // CreateControls2{}
+    // PreferredMobileOs{}
+    // PreferredMovies{}
+    // ComboboxDemo{}
 
 
 
