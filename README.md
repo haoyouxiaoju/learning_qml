@@ -1,5 +1,5 @@
 # learning_qml
-存储学习qml期间的代码
+存储学习qml期间的体会
 
 ### 使用的是<<Qt Quick核心编程>>
 
@@ -16,9 +16,13 @@
   ```
 
 
-- 在Main.qml中使用其他qml文件时发现qml文件命名首字母得大写,否则无法识别到
+- 在Main.qml中使用其他qml文件时发现qml文件命名首字母得大写,否则无法识别到(挺疑惑的)
+- qml更加贴近于js,qt6貌似也倾向于有具体类型的数据了
 - 使用Connections连接信号和槽函数时,qt6书写方式发生改变,直接查看[day02](./day02/day02.md)
 - Qt6不再使用Component定义控件的Sytle样式做原型,由于Styles模块已移除且Component已不再用于自定义组件[day03](./day03/day03.md)
+- TabView 替换方案[day04](./day04/day04.md)
+- Qml 图片显示不出来的问题,简单说一下就是缺少一个选项没开启,官方文档居然没有强调.具体查看[day04](./day04/day04.md)
+- 
 
 
 
@@ -33,3 +37,7 @@
 ##### day_02--2025/4/21
 
 完成6~7章结束
+
+##### day_03\day_04\day_05--2025/4/25
+
+8-10章,布局内容没多看,第九章的自定义控件倒是收获很多,对比qtwidget我个人认为更加操作简单,而且官方文档也非常详细的有自定义控件的模板.[自定义 Qt Quick Controls |Qt 快速控制 |Qt 6.9.0 版本](https://doc.qt.io/qt-6/qtquickcontrols-customize.html#creating-a-custom-style).同时在看canvas时想起自己也写过一个验证码的控件,于是自己使用qml复刻了一下,非常期待后面的内容

@@ -1,10 +1,12 @@
 import QtQuick
 import QtQuick.VirtualKeyboard
 import QtQuick.Controls
-
+import QtQuick.Layouts
 // import QtQuick.Controls.Styles
 import "./day02"
 import "./day03"
+import "./day04"
+import "./day05"
 
 Window {
     id: window
@@ -28,7 +30,48 @@ Window {
     // PreferredMobileOs{}
     // PreferredMovies{}
     // ComboboxDemo{}
+    // ProgressBarDemo{}
+    // MyTabView{
+    //     width: 400;
+    //     height:500;
+    // }
+    // MyStackView{}
+    // SliderDemo{}
+    // FlickableDemo{}
+    // CanvasTransform{}
+    // AuthCodeItem{}
+    // CanvasClipDemo{}
+    CanvasFilesDemo{}
 
+
+    // Canvas{
+    //     width:400;
+    //     height:300;
+    //     id:root;
+    //     property  string iconUrl : "qrc:/source/icons/avatar.png";
+    //     property string womanUrl : "https://tse3-mm.cn.bing.net/th/id/OIP-C.HjYIizKCiIsDIj-Dvm-udQAAAA?rs=1&pid=ImgDetMain";
+    //     Image{
+    //         id:poster;
+    //         source:root.womanUrl;
+    //         visible:false;
+    //         onStatusChanged:(status)=>{
+    //             if(status === Image.Ready){
+    //                 root.requestPaint();
+    //             }
+    //         }
+    //     }
+
+    //     onPaint:{
+    //         var ctx = getContext("2d");
+    //         // ctx.beginPath(); //没有用,只能发送requestPaint(); 图片才显示
+    //         // ctx.drawImage(iconUrl,0,0);s
+    //         // ctx.drawImage(womanUrl,200,50);
+    //         ctx.drawImage(poster,100,50);
+    //         // ctx.fill();
+    //     }
+    //     // Component.onCompleted: loadImage(iconUrl);
+    //     // onImageLoaded: requestPaint();
+    // }
 
 
 

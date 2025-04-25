@@ -58,7 +58,7 @@ roperty var dynamicObjects : [];
 
 ```
 //书中P151，使用到了数组的slice但是不起效果，在数组大小为1时能正常获取数组最后一个元素
-//从参考文档中查看也没发现有具体问题,这里提醒一下slice复制出的时[-1,1)左闭右开的区间,
+//从参考文档中查看也没发现有具体问题,这里提醒一下slice(-1,1)复制出的时[-1,1)左闭右开的区间,
 //所以正常item应该时俩个元素 -1,0 
 var item = rootItem.dynamicObjects.slice(-1,1)
 item[0].destroy();

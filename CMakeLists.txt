@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.16)
 project(lean_02 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTORCC ON)
 # set(QML_IMPORT_PATH "D:/download/qt6/6.8.2/msvc2022_64/qml")
 
 find_package(Qt6 REQUIRED COMPONENTS Quick)
@@ -11,6 +12,7 @@ qt_standard_project_setup(REQUIRES 6.5)
 
 qt_add_executable(applean_02
     main.cpp
+    day05/keybackquit.h day05/keybackquit.cpp
 )
 
 qt_add_qml_module(applean_02
@@ -37,6 +39,21 @@ qt_add_qml_module(applean_02
         QML_FILES day03/PreferredMobiesCheckBox.qml
         QML_FILES day03/ComboboxDemo.qml
         QML_FILES day03/MyCombobox.qml
+        QML_FILES day03/ProgressBarDemo.qml
+        QML_FILES day03/MyProgressBar.qml
+        QML_FILES day04/TabViewSimple.qml
+        QML_FILES day04/MyTabView.qml
+        QML_FILES day04/MyStackView.qml
+        QML_FILES day04/SliderDemo.qml
+        QML_FILES day04/FlickableDemo.qml
+        QML_FILES day05/CanvasTransform.qml
+        QML_FILES day05/AuthCodeItem.qml
+        QML_FILES day05/CanvasClipDemo.qml
+        QML_FILES day05/CanvasFilesDemo.qml
+        QML_FILES day05/CanvasFilesDemoButton.qml
+        RESOURCES source.qrc
+
+
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
