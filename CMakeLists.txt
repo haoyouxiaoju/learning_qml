@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTORCC ON)
 # set(QML_IMPORT_PATH "D:/download/qt6/6.8.2/msvc2022_64/qml")
 
-find_package(Qt6 REQUIRED COMPONENTS Quick)
+find_package(Qt6 REQUIRED COMPONENTS Quick Core5Compat Core)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -14,6 +14,8 @@ qt_add_executable(applean_02
     main.cpp
     day05/keybackquit.h day05/keybackquit.cpp
 )
+
+
 
 qt_add_qml_module(applean_02
     URI lean_02
@@ -51,8 +53,42 @@ qt_add_qml_module(applean_02
         QML_FILES day05/CanvasClipDemo.qml
         QML_FILES day05/CanvasFilesDemo.qml
         QML_FILES day05/CanvasFilesDemoButton.qml
+        QML_FILES day06/ColorMakerDemo.qml
+        QML_FILES day06/CallQmlDemo.qml
+        QML_FILES day06/ImageProcessorDemo.qml
+        QML_FILES day06/ImageProcessorButton.qml
         RESOURCES source.qrc
-
+        SOURCES day06/colormaker.h day06/colormaker.cpp
+        SOURCES day06/changeqmlcolor.h day06/changeqmlcolor.cpp
+        SOURCES day06/imageprocessor.h day06/imageprocessor.cpp
+        QML_FILES day07/PropertAnimationStandalone.qml
+        QML_FILES day07/PropertyAnimationSwap.qml
+        QML_FILES day07/NumberAnimationSquareToCircle.qml
+        QML_FILES day07/ColorAnimationRedToGreen.qml
+        QML_FILES day07/RotationAnimationDemo.qml
+        QML_FILES day07/PathAnimationDemo.qml
+        QML_FILES day07/SmoothedAnimationDemo.qml
+        QML_FILES day07/SpringAnimationDemo.qml
+        QML_FILES day07/SequentialAnimationDemo.qml
+        QML_FILES day07/StateDemo.qml
+        QML_FILES day07/ParentChangeDemo.qml
+        QML_FILES day07/TransitionRectDemo.qml
+        QML_FILES day07/Bubbleshot.qml
+        QML_FILES day08/PhoneListViewDemo.qml
+        QML_FILES day08/PhoneListItemText.qml
+        QML_FILES day08/PhoneListDeletage.qml
+        QML_FILES day08/VideoListXml.qml
+        QML_FILES day08/VideoListViewText.qml
+        SOURCES day08/videolistmodel.h day08/videolistmodel.cpp
+        SOURCES day08/tablemodel.h day08/tablemodel.cpp
+        QML_FILES day08/PhoneTableSimple.qml
+        QML_FILES day08/FindImageDemo.qml
+        QML_FILES day08/FlatButton.qml
+        QML_FILES day08/ImageDigger.qml
+        QML_FILES day08/LocalViewer.qml
+        QML_FILES day09/SimpleMusic.qml
+        QML_FILES day09/SimpleCameraDemo.qml
+        QML_FILES day09/FileReaderDemo.qml
 
 )
 
@@ -68,7 +104,7 @@ set_target_properties(applean_02 PROPERTIES
 )
 
 target_link_libraries(applean_02
-    PRIVATE Qt6::Quick
+    PRIVATE Qt6::Quick Qt6::Core5Compat Qt6::Core
 )
 
 include(GNUInstallDirs)

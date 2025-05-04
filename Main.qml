@@ -1,12 +1,40 @@
 import QtQuick
-import QtQuick.VirtualKeyboard
+// import QtQuick.VirtualKeyboard
 import QtQuick.Controls
-import QtQuick.Layouts
+import QtMultimedia
+// import QtQuick.Layouts
+// import an.qt.ColorMaker 1.0
 // import QtQuick.Controls.Styles
-import "./day02"
-import "./day03"
-import "./day04"
-import "./day05"
+// import "./day02"
+// import "./day03"
+// import "./day04"
+// import "./day05"
+// import "./day06"
+// import "./day07"
+// import "./day08"
+import "./day09"
+ // import Qt.labs.qmlmodels
+
+// Window{
+//     objectName:"rootObject";
+//     width:360;
+//     height:360;
+//     visible:true;
+//     Text{
+//         objectName:"textLabel";
+//         text:"Hello World";
+//         anchors.centerIn:parent;
+//         font.pixelSize: 26;
+//     }
+//     Button{
+//         objectName:"quitButtom";
+//         anchors.right: parent.right;
+//         anchors.rightMargin: 4;
+//         anchors.bottom: parent.bottom;
+//         anchors.bottomMargin:4;
+//         text:"quit";
+//     }
+// }
 
 Window {
     id: window
@@ -41,9 +69,39 @@ Window {
     // CanvasTransform{}
     // AuthCodeItem{}
     // CanvasClipDemo{}
-    CanvasFilesDemo{}
+    // CanvasFilesDemo{}
+    // ColorMakerDemo{}
+    // CallQmlDemo{}
+
+    // PhoneTableSimple{}
+    // FindImageDemo{}
+    // SimpleMusic{}
+    // SimpleCameraDemo{}
+
+    FileReaderDemo{}
+    
 
 
+    // ImageProcessorDemo{}
+    // PropertAnimationStandalone{}
+    // PropertyAnimationSwap{}
+    // NumberAnimationSquareToCircle{}
+    // ColorAnimationRedToGreen{}
+    // RotationAnimationDemo{}
+    // PathAnimationDemo{}
+    // SmoothedAnimationDemo{}
+    // SpringAnimationDemo{}
+    // SequentialAnimationDemo{}
+    // StateDemo{}
+    // ParentChangeDemo{}
+    // TransitionRectDemo{}
+    // Image {
+        // id: iamge1
+        // source: "qrc:/source/icons/bubble_1.png"
+    // }
+    // Bubbleshot{}
+    // PhoneListViewDemo{}
+    // VideoListXml{}
     // Canvas{
     //     width:400;
     //     height:300;
